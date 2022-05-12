@@ -2394,6 +2394,7 @@ body::after {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-bottom: 1.25rem;
 }
 
 .inner__services {
