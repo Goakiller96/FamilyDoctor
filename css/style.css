@@ -2394,11 +2394,11 @@ body::after {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 1.25rem;
 }
 
 .inner__services {
   background-color: #F3FEFE;
+  padding-bottom: 1.875rem;
   border-radius: 20px 20px 0 0;
   position: relative;
 }
@@ -2436,18 +2436,6 @@ body::after {
 @supports not (padding-right: clamp( 1.875rem , 0.875rem  +  5vw , 5rem )) {
   .inner__services {
     padding-right: calc(1.875rem + 3.125 * (100vw - 20rem) / 62.5);
-  }
-}
-
-@supports (padding-bottom: clamp( 1.875rem , 1.875rem  +  0vw , 1.875rem )) {
-  .inner__services {
-    padding-bottom: clamp( 1.875rem , 1.875rem  +  0vw , 1.875rem );
-  }
-}
-
-@supports not (padding-bottom: clamp( 1.875rem , 1.875rem  +  0vw , 1.875rem )) {
-  .inner__services {
-    padding-bottom: calc(1.875rem + 0 * (100vw - 20rem) / 62.5);
   }
 }
 
