@@ -2539,6 +2539,7 @@ body::after {
 
 .inner__content {
   max-width: 34.3125rem;
+  padding-left: 1.875rem;
 }
 
 .inner__content-item {
