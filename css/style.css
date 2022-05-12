@@ -4596,7 +4596,7 @@ body::after {
   }
 
   .doctors__wrapper {
-    display: block;
+    display: -webkit-box;
   }
 
   .doctors__doctor {
@@ -4605,6 +4605,7 @@ body::after {
 
   .doctors__body {
     margin: 0 auto;
+    width: 94%;
   }
 
   .clinic__wrapper {
