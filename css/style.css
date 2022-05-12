@@ -4733,6 +4733,27 @@ body::after {
   }
 }
 
+@media (max-width: 38.75em) {
+@supports (padding-bottom: clamp( 1.875rem , 1.275rem  +  3vw , 3.75rem )) {
+    .about {
+      padding-bottom: clamp( 1.875rem , 1.275rem  +  3vw , 3.75rem );
+    }
+}
+
+@supports not (padding-bottom: clamp( 1.875rem , 1.275rem  +  3vw , 3.75rem )) {
+    .about {
+      padding-bottom: calc(1.875rem + 1.875 * (100vw - 20rem) / 62.5);
+    }
+}
+
+  .about__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 @media (max-width: 35.9375em) {
   .firstqueeze__dots {
     -webkit-column-gap: 0.3125rem;
