@@ -2560,15 +2560,15 @@ body::after {
   }
 }
 
-@supports (margin-bottom: clamp( 0.875rem , 0.635rem  +  1.2vw , 1.625rem )) {
+@supports (margin-bottom: clamp( 0.875rem , 0.755rem  +  0.6vw , 1.25rem )) {
   .inner__content-item:not(:last-child) {
-    margin-bottom: clamp( 0.875rem , 0.635rem  +  1.2vw , 1.625rem );
+    margin-bottom: clamp( 0.875rem , 0.755rem  +  0.6vw , 1.25rem );
   }
 }
 
-@supports not (margin-bottom: clamp( 0.875rem , 0.635rem  +  1.2vw , 1.625rem )) {
+@supports not (margin-bottom: clamp( 0.875rem , 0.755rem  +  0.6vw , 1.25rem )) {
   .inner__content-item:not(:last-child) {
-    margin-bottom: calc(0.875rem + 0.75 * (100vw - 20rem) / 62.5);
+    margin-bottom: calc(0.875rem + 0.375 * (100vw - 20rem) / 62.5);
   }
 }
 
