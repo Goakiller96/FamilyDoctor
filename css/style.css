@@ -906,6 +906,7 @@ body::after {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 1.875rem;
+  padding-top: 1.0625rem;
 }
 
 .firstqueeze__link {
